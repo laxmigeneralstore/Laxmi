@@ -1,343 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Laxmi General Store — Wholesale &amp; Retail FMCG Distributor in Sundernagar, Himachal Pradesh. Browse our complete product catalogue." />
-  <title>Laxmi General Store — FMCG Catalogue</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-</head>
-<body>
+[
+  { "category": "Biscuits", "brand": "Britannia", "name": "Good Day Butter Cookies", "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80" },
+  { "category": "Biscuits", "brand": "Britannia", "name": "Marie Gold", "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&q=80" },
+  { "category": "Biscuits", "brand": "Britannia", "name": "NutriChoice Digestive", "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80" },
+  { "category": "Biscuits", "brand": "Britannia", "name": "50-50 Sweet & Salty", "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&q=80" },
+  { "category": "Biscuits", "brand": "Britannia", "name": "Bourbon Cream", "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80" },
+  { "category": "Biscuits", "brand": "Parle", "name": "Parle-G Original", "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&q=80" },
+  { "category": "Biscuits", "brand": "Parle", "name": "Hide & Seek Chocolate", "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80" },
+  { "category": "Biscuits", "brand": "Parle", "name": "Krackjack Sweet Salty", "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&q=80" },
+  { "category": "Biscuits", "brand": "Parle", "name": "Monaco Classic", "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80" },
+  { "category": "Biscuits", "brand": "Sunfeast", "name": "Dark Fantasy Choco Fills", "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&q=80" },
+  { "category": "Biscuits", "brand": "Sunfeast", "name": "Yippee Magic Masala", "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80" },
+  { "category": "Biscuits", "brand": "McVitie's", "name": "Digestive Original", "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&q=80" },
 
-  <!-- ══ NAVBAR ══════════════════════════════════════ -->
-  <header class="navbar" id="navbar">
-    <div class="nav-inner">
-      <div class="nav-brand" id="nav-brand-btn" role="button" tabindex="0" aria-label="Go to home">
-        <div class="brand-icon">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-            <rect width="28" height="28" rx="8" fill="url(#nlg)" />
-            <text x="14" y="19" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="serif">ल</text>
-            <defs>
-              <linearGradient id="nlg" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#f5a623"/><stop offset="1" stop-color="#e85d04"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="brand-text">
-          <span class="brand-name">Laxmi General Store</span>
-          <span class="brand-loc">Sundernagar, HP</span>
-        </div>
-      </div>
+  { "category": "Snacks & Namkeen", "brand": "Lay's", "name": "Classic Salted Chips", "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Lay's", "name": "Spanish Tomato Tango", "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Lay's", "name": "Magic Masala", "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Lay's", "name": "American Style Cream & Onion", "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Haldiram", "name": "Aloo Bhujia", "image": "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Haldiram", "name": "Moong Dal", "image": "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Haldiram", "name": "Mixture Namkeen", "image": "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Haldiram", "name": "Khatta Meetha", "image": "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Bingo", "name": "Mad Angles Achari Masti", "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Bingo", "name": "Original Style Masala", "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Kurkure", "name": "Masala Munch", "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Kurkure", "name": "Green Chutney Style", "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Bikaji", "name": "Bikaneri Bhujia", "image": "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=400&q=80" },
+  { "category": "Snacks & Namkeen", "brand": "Bikaji", "name": "All In One Namkeen", "image": "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=400&q=80" },
 
-      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
-        <a href="#" class="nav-link active" data-view="home">Home</a>
-        <a href="#" class="nav-link" data-view="categories">Categories</a>
-      </nav>
+  { "category": "Cold Drinks", "brand": "Coca Cola", "name": "Coca-Cola Original 250ml", "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Coca Cola", "name": "Coca-Cola 600ml PET", "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Coca Cola", "name": "Coca-Cola 2L Family Pack", "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Pepsi", "name": "Pepsi Cola 250ml Can", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Pepsi", "name": "Pepsi 600ml PET Bottle", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Pepsi", "name": "Pepsi 2L PET Bottle", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Sprite", "name": "Sprite Lemon 250ml", "image": "https://images.unsplash.com/photo-1625772452859-1c03d884dcd7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Sprite", "name": "Sprite 600ml PET", "image": "https://images.unsplash.com/photo-1625772452859-1c03d884dcd7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Fanta", "name": "Fanta Orange 250ml", "image": "https://images.unsplash.com/photo-1625772452859-1c03d884dcd7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Fanta", "name": "Fanta Orange 600ml PET", "image": "https://images.unsplash.com/photo-1625772452859-1c03d884dcd7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Limca", "name": "Limca Lemon 250ml Can", "image": "https://images.unsplash.com/photo-1625772452859-1c03d884dcd7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Limca", "name": "Limca 600ml PET Bottle", "image": "https://images.unsplash.com/photo-1625772452859-1c03d884dcd7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Thums Up", "name": "Thums Up 250ml Can", "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Thums Up", "name": "Thums Up 600ml PET", "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Mountain Dew", "name": "Mountain Dew 250ml Can", "image": "https://images.unsplash.com/photo-1625772452859-1c03d884dcd7?w=400&q=80" },
+  { "category": "Cold Drinks", "brand": "Mountain Dew", "name": "Mountain Dew 600ml PET", "image": "https://images.unsplash.com/photo-1625772452859-1c03d884dcd7?w=400&q=80" },
 
-      <div class="nav-right">
-        <button class="nav-search-btn" id="nav-search-btn" aria-label="Open search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
+  { "category": "Mineral Water", "brand": "Bisleri", "name": "Bisleri 500ml", "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&q=80" },
+  { "category": "Mineral Water", "brand": "Bisleri", "name": "Bisleri 1 Litre", "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&q=80" },
+  { "category": "Mineral Water", "brand": "Bisleri", "name": "Bisleri 2 Litre", "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&q=80" },
+  { "category": "Mineral Water", "brand": "Bisleri", "name": "Bisleri 5 Litre Jar", "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&q=80" },
+  { "category": "Mineral Water", "brand": "Kinley", "name": "Kinley Water 500ml", "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&q=80" },
+  { "category": "Mineral Water", "brand": "Kinley", "name": "Kinley Water 1 Litre", "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&q=80" },
+  { "category": "Mineral Water", "brand": "Aquafina", "name": "Aquafina 500ml", "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&q=80" },
+  { "category": "Mineral Water", "brand": "Aquafina", "name": "Aquafina 1 Litre", "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&q=80" },
 
-    <!-- Global Search Bar -->
-    <div class="global-search-bar" id="global-search-bar" role="search">
-      <div class="gsc-inner">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <input type="text" id="global-search-input" placeholder="Search products, brands, categories…" autocomplete="off" aria-label="Search" />
-        <button id="gsc-close" aria-label="Close search">✕</button>
-      </div>
-      <div class="search-results" id="search-results" role="listbox"></div>
-    </div>
-  </header>
+  { "category": "Juices & Fruit Drinks", "brand": "Frooti", "name": "Frooti Mango 200ml Tetra", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
+  { "category": "Juices & Fruit Drinks", "brand": "Frooti", "name": "Frooti Mango 500ml PET", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
+  { "category": "Juices & Fruit Drinks", "brand": "Maaza", "name": "Maaza Mango 250ml", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
+  { "category": "Juices & Fruit Drinks", "brand": "Maaza", "name": "Maaza Mango 600ml PET", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
+  { "category": "Juices & Fruit Drinks", "brand": "Real", "name": "Real Mixed Fruit Juice 1L", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
+  { "category": "Juices & Fruit Drinks", "brand": "Real", "name": "Real Orange Juice 1L", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
+  { "category": "Juices & Fruit Drinks", "brand": "Real", "name": "Real Guava Juice 1L", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
+  { "category": "Juices & Fruit Drinks", "brand": "Tropicana", "name": "Tropicana Orange 1L", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
+  { "category": "Juices & Fruit Drinks", "brand": "Tropicana", "name": "Tropicana Apple 1L", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
+  { "category": "Juices & Fruit Drinks", "brand": "Tropicana", "name": "Tropicana Mixed Fruit 1L", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
+  { "category": "Juices & Fruit Drinks", "brand": "Slice", "name": "Slice Mango 600ml", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
+  { "category": "Juices & Fruit Drinks", "brand": "Slice", "name": "Slice Mango 1.25L", "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" },
 
-  <!-- ── MOBILE NAV DRAWER ──────────────────────────── -->
-  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
-    <a href="#" class="mob-link" data-view="home">🏠 Home</a>
-    <a href="#" class="mob-link" data-view="categories">📦 Categories</a>
-  </div>
-  <div class="mobile-overlay" id="mobile-overlay"></div>
+  { "category": "Chocolates", "brand": "Cadbury", "name": "Dairy Milk 45g", "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" },
+  { "category": "Chocolates", "brand": "Cadbury", "name": "Dairy Milk Silk 60g", "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" },
+  { "category": "Chocolates", "brand": "Cadbury", "name": "5 Star Original", "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" },
+  { "category": "Chocolates", "brand": "Cadbury", "name": "Perk Wafer Chocolate", "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" },
+  { "category": "Chocolates", "brand": "Cadbury", "name": "Bournville Dark 80g", "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" },
+  { "category": "Chocolates", "brand": "Nestlé", "name": "KitKat 4 Finger", "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" },
+  { "category": "Chocolates", "brand": "Nestlé", "name": "Munch Crispy Wafer", "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" },
+  { "category": "Chocolates", "brand": "Nestlé", "name": "Milkybar White Chocolate", "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" },
+  { "category": "Chocolates", "brand": "Ferrero", "name": "Ferrero Rocher 3 Pcs", "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" },
+  { "category": "Chocolates", "brand": "Amul", "name": "Amul Dark Chocolate 75g", "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" },
+  { "category": "Chocolates", "brand": "Amul", "name": "Amul Milk Chocolate 55g", "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" },
 
-  <!-- ══ MAIN CONTENT ══════════════════════════════════ -->
-  <main id="main-content">
+  { "category": "Toffee & Candy", "brand": "Parle", "name": "Melody Toffee", "image": "https://images.unsplash.com/photo-1582058091597-bc4a40ddd3b3?w=400&q=80" },
+  { "category": "Toffee & Candy", "brand": "Parle", "name": "Mango Bite Candy", "image": "https://images.unsplash.com/photo-1582058091597-bc4a40ddd3b3?w=400&q=80" },
+  { "category": "Toffee & Candy", "brand": "Parle", "name": "Kismi Toffee Bar", "image": "https://images.unsplash.com/photo-1582058091597-bc4a40ddd3b3?w=400&q=80" },
+  { "category": "Toffee & Candy", "brand": "Candyman", "name": "Fruitee Fun Candy", "image": "https://images.unsplash.com/photo-1582058091597-bc4a40ddd3b3?w=400&q=80" },
+  { "category": "Toffee & Candy", "brand": "Candyman", "name": "Cofitino Coffee Toffee", "image": "https://images.unsplash.com/photo-1582058091597-bc4a40ddd3b3?w=400&q=80" },
+  { "category": "Toffee & Candy", "brand": "Alpenliebe", "name": "Strawberry Candy Roll", "image": "https://images.unsplash.com/photo-1582058091597-bc4a40ddd3b3?w=400&q=80" },
+  { "category": "Toffee & Candy", "brand": "Alpenliebe", "name": "Classic Caramel Candy", "image": "https://images.unsplash.com/photo-1582058091597-bc4a40ddd3b3?w=400&q=80" },
+  { "category": "Toffee & Candy", "brand": "Pass Pass", "name": "Pulse Raw Mango Candy", "image": "https://images.unsplash.com/photo-1582058091597-bc4a40ddd3b3?w=400&q=80" },
 
-    <!-- ════════ HOME VIEW ════════ -->
-    <section id="view-home" class="view active">
+  { "category": "Personal Care", "brand": "Colgate", "name": "Strong Teeth Toothpaste 100g", "image": "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Colgate", "name": "MaxFresh Toothpaste 150g", "image": "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Colgate", "name": "Colgate 360 Toothbrush", "image": "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Dove", "name": "Dove Beauty Bar 75g", "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Dove", "name": "Dove Shampoo 340ml", "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Head & Shoulders", "name": "Anti-Dandruff Shampoo 340ml", "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Lifebuoy", "name": "Total Soap Bar 125g", "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Lifebuoy", "name": "Handwash 250ml Pump", "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Parachute", "name": "Coconut Hair Oil 200ml", "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Parachute", "name": "Advansed Gold Hair Oil 100ml", "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Himalaya", "name": "Neem Face Wash 150ml", "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Himalaya", "name": "Moisturizing Aloe Vera Gel 50ml", "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Vaseline", "name": "Original Petroleum Jelly 50ml", "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" },
+  { "category": "Personal Care", "brand": "Vaseline", "name": "Intensive Care Body Lotion 200ml", "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" },
 
-      <!-- Hero -->
-      <div class="hero">
-        <div class="hero-bg">
-          <div class="hero-grain"></div>
-          <div class="orb orb-1"></div>
-          <div class="orb orb-2"></div>
-          <div class="orb orb-3"></div>
-        </div>
-        <div class="hero-content">
-          <div class="hero-badges">
-            <span class="badge badge-wholesale">Wholesale</span>
-            <span class="badge badge-retail">Retail</span>
-          </div>
-          <h1 class="hero-title">
-            <span class="hero-title-line">Laxmi</span>
-            <span class="hero-title-line accent">General Store</span>
-          </h1>
-          <p class="hero-sub">Your trusted FMCG distributor in <strong>Sundernagar, Himachal Pradesh</strong>. Browse our complete catalogue of top brands.</p>
-          <div class="hero-search">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            <input type="text" id="hero-search" placeholder="Search products, brands or categories…" autocomplete="off" />
-            <button id="hero-search-btn">Search</button>
-          </div>
-          <div class="hero-stats">
-            <div class="stat"><span class="stat-num" id="stat-products">—</span><span class="stat-label">Products</span></div>
-            <div class="stat-divider"></div>
-            <div class="stat"><span class="stat-num" id="stat-brands">—</span><span class="stat-label">Brands</span></div>
-            <div class="stat-divider"></div>
-            <div class="stat"><span class="stat-num" id="stat-cats">—</span><span class="stat-label">Categories</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Categories Grid -->
-      <section class="section section-cats-home">
-        <div class="section-head">
-          <div>
-            <div class="section-eyebrow">Browse by</div>
-            <h2 class="section-title">Categories</h2>
-          </div>
-        </div>
-        <div class="categories-grid" id="home-categories-grid"></div>
-      </section>
-
-      <!-- About -->
-      <section class="section about-section">
-        <div class="about-card">
-          <div class="about-left">
-            <div class="about-icon">🏪</div>
-            <div class="section-eyebrow" style="margin-top:12px;">About Us</div>
-            <h2 class="section-title" style="margin-top:6px;">Trusted Since Decades</h2>
-            <p class="about-desc">Laxmi General Store is a leading wholesale and retail FMCG distributor based in Sundernagar, Himachal Pradesh. We supply top FMCG brands across biscuits, snacks, beverages, chocolates, personal care and grocery to retailers, hotels, and institutions across the region.</p>
-            <div class="about-features">
-              <div class="af-item"><span class="af-icon">✅</span> Authorised distributor of top brands</div>
-              <div class="af-item"><span class="af-icon">✅</span> Wholesale &amp; retail supply available</div>
-              <div class="af-item"><span class="af-icon">✅</span> Fast delivery across Sundernagar &amp; nearby areas</div>
-              <div class="af-item"><span class="af-icon">✅</span> Trusted by hundreds of retailers</div>
-            </div>
-          </div>
-          <div class="about-right">
-            <div class="contact-card">
-              <div class="cc-head">Get in Touch</div>
-              <div class="cc-body">
-                <div class="cc-item">
-                  <span class="cc-icon">📍</span>
-                  <div>
-                    <div class="cc-label">Location</div>
-                    <div class="cc-val">Sundernagar, Mandi<br>Himachal Pradesh — 175018</div>
-                  </div>
-                </div>
-                <div class="cc-item">
-                  <span class="cc-icon">🕐</span>
-                  <div>
-                    <div class="cc-label">Working Hours</div>
-                    <div class="cc-val">Mon–Sat: 9 AM – 8 PM</div>
-                  </div>
-                </div>
-                <div class="cc-item">
-                  <span class="cc-icon">📦</span>
-                  <div>
-                    <div class="cc-label">We Deal In</div>
-                    <div class="cc-val">Wholesale &amp; Retail</div>
-                  </div>
-                </div>
-              </div>
-              <a class="whatsapp-btn" href="https://wa.me/919999999999?text=Hello%20Laxmi%20General%20Store%2C%20I%20would%20like%20to%20enquire%20about%20your%20products." target="_blank" rel="noopener">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                WhatsApp Enquiry
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </section><!-- /view-home -->
-
-    <!-- ════════ CATEGORIES VIEW ════════ -->
-    <section id="view-categories" class="view">
-      <div class="view-hero">
-        <div class="view-hero-inner">
-          <nav class="breadcrumb" aria-label="Breadcrumb">
-            <span class="bc-link" data-view="home">Home</span>
-            <span class="bc-sep">›</span>
-            <span class="bc-current">Categories</span>
-          </nav>
-          <h1 class="view-title">All Categories</h1>
-          <p class="view-sub">Browse our complete range of FMCG product categories</p>
-        </div>
-      </div>
-      <div class="section">
-        <div class="categories-grid categories-grid-full" id="all-categories-grid"></div>
-      </div>
-    </section>
-
-    <!-- ════════ SINGLE CATEGORY VIEW ════════ -->
-    <section id="view-category" class="view">
-      <div class="view-hero">
-        <div class="view-hero-inner">
-          <nav class="breadcrumb" aria-label="Breadcrumb">
-            <span class="bc-link" data-view="home">Home</span>
-            <span class="bc-sep">›</span>
-            <span class="bc-link" data-view="categories">Categories</span>
-            <span class="bc-sep">›</span>
-            <span class="bc-current" id="cat-breadcrumb">—</span>
-          </nav>
-          <button class="back-btn" id="cat-back-btn">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            Back to Categories
-          </button>
-          <div class="cat-hero-emoji" id="cat-hero-emoji"></div>
-          <h1 class="view-title" id="cat-hero-title">—</h1>
-          <p class="view-sub" id="cat-hero-desc">—</p>
-        </div>
-      </div>
-      <div class="section">
-        <div class="section-head">
-          <h2 class="section-subtitle">Brands in this Category</h2>
-          <div class="search-row">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            <input type="text" id="cat-brand-search" placeholder="Search brands…" autocomplete="off" />
-          </div>
-        </div>
-        <div class="brands-grid" id="cat-brands-grid"></div>
-      </div>
-    </section>
-
-    <!-- ════════ SINGLE BRAND VIEW ════════ -->
-    <section id="view-brand" class="view">
-      <div class="view-hero">
-        <div class="view-hero-inner">
-          <nav class="breadcrumb" aria-label="Breadcrumb">
-            <span class="bc-link" data-view="home">Home</span>
-            <span class="bc-sep">›</span>
-            <span class="bc-link" data-view="categories">Categories</span>
-            <span class="bc-sep">›</span>
-            <span class="bc-link" id="brand-cat-bc" data-action="back-to-cat">—</span>
-            <span class="bc-sep">›</span>
-            <span class="bc-current" id="brand-breadcrumb">—</span>
-          </nav>
-          <button class="back-btn" id="brand-back-btn">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            Back to <span id="brand-back-label">Category</span>
-          </button>
-          <div class="brand-hero-initial" id="brand-hero-initial"></div>
-          <h1 class="view-title" id="brand-hero-title">—</h1>
-          <p class="view-sub" id="brand-hero-cat-label">—</p>
-        </div>
-      </div>
-      <div class="section">
-        <div class="section-head">
-          <h2 class="section-subtitle" id="brand-products-heading">Products</h2>
-          <div class="search-row">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            <input type="text" id="brand-prod-search" placeholder="Search products…" autocomplete="off" />
-          </div>
-        </div>
-        <div class="products-grid" id="brand-products-grid"></div>
-      </div>
-    </section>
-
-    <!-- ════════ PRODUCT DETAIL VIEW ════════ -->
-    <section id="view-product" class="view">
-      <div class="view-hero">
-        <div class="view-hero-inner">
-          <nav class="breadcrumb" aria-label="Breadcrumb">
-            <span class="bc-link" data-view="home">Home</span>
-            <span class="bc-sep">›</span>
-            <span class="bc-link" data-view="categories">Categories</span>
-            <span class="bc-sep">›</span>
-            <span class="bc-link" id="prod-cat-bc" data-action="back-to-cat-from-prod">—</span>
-            <span class="bc-sep">›</span>
-            <span class="bc-link" id="prod-brand-bc" data-action="back-to-brand">—</span>
-            <span class="bc-sep">›</span>
-            <span class="bc-current" id="prod-breadcrumb">—</span>
-          </nav>
-          <button class="back-btn" id="prod-back-btn">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            Back to <span id="prod-back-label">Products</span>
-          </button>
-        </div>
-      </div>
-      <div class="section">
-        <div class="product-detail-wrap" id="product-detail-card"></div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ══ FOOTER ══════════════════════════════════════ -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="brand-icon">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-            <rect width="28" height="28" rx="8" fill="url(#flg)" />
-            <text x="14" y="19" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="serif">ल</text>
-            <defs>
-              <linearGradient id="flg" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#f5a623"/><stop offset="1" stop-color="#e85d04"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div>
-          <div class="footer-name">Laxmi General Store</div>
-          <div class="footer-loc">Sundernagar, Himachal Pradesh</div>
-        </div>
-      </div>
-      <div class="footer-links">
-        <a href="#" data-view="home">Home</a>
-        <a href="#" data-view="categories">Categories</a>
-      </div>
-      <div class="footer-copy">© 2025 Laxmi General Store. All rights reserved. | Wholesale &amp; Retail FMCG Distributor</div>
-    </div>
-  </footer>
-
-  <!-- Floating WhatsApp -->
-  <a class="wa-float" href="https://wa.me/919999999999?text=Hello%20Laxmi%20General%20Store%2C%20I%20would%20like%20to%20enquire%20about%20your%20products." target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
-
-  <!-- Loading Overlay (shown while fetching Google Sheet) -->
-  <div id="loading-overlay" style="
-    position:fixed;inset:0;z-index:2000;
-    background:rgba(10,10,15,0.96);
-    display:flex;align-items:center;justify-content:center;
-    backdrop-filter:blur(8px);
-  ">
-    <div style="text-align:center">
-      <div style="
-        width:48px;height:48px;border-radius:50%;
-        border:3px solid rgba(245,166,35,0.2);
-        border-top-color:#f5a623;
-        animation:spin 0.8s linear infinite;
-        margin:0 auto 16px;
-      "></div>
-      <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:#f0f0f5;">
-        Loading catalogue…
-      </div>
-      <div style="font-size:0.78rem;color:#666680;margin-top:6px;">
-        Fetching from Google Sheets
-      </div>
-    </div>
-  </div>
-  <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  { "category": "Grocery", "brand": "Aashirvaad", "name": "Select Whole Wheat Atta 5kg", "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" },
+  { "category": "Grocery", "brand": "Aashirvaad", "name": "Superior MP Atta 10kg", "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" },
+  { "category": "Grocery", "brand": "Fortune", "name": "Sunflower Oil 1L", "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&q=80" },
+  { "category": "Grocery", "brand": "Fortune", "name": "Soya Health Oil 5L", "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&q=80" },
+  { "category": "Grocery", "brand": "Tata Salt", "name": "Iodised Salt 1kg", "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" },
+  { "category": "Grocery", "brand": "Tata Salt", "name": "Rock Salt 1kg", "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" },
+  { "category": "Grocery", "brand": "Amul", "name": "Butter 500g", "image": "https://images.unsplash.com/photo-1559561853-08451507cbe7?w=400&q=80" },
+  { "category": "Grocery", "brand": "Amul", "name": "Cow Ghee 1L", "image": "https://images.unsplash.com/photo-1559561853-08451507cbe7?w=400&q=80" },
+  { "category": "Grocery", "brand": "Maggi", "name": "2-Minute Noodles Masala 70g", "image": "https://images.unsplash.com/photo-1555126634-323283e090fa?w=400&q=80" },
+  { "category": "Grocery", "brand": "Maggi", "name": "Atta Noodles Masala 75g", "image": "https://images.unsplash.com/photo-1555126634-323283e090fa?w=400&q=80" },
+  { "category": "Grocery", "brand": "MDH", "name": "Chunky Chaat Masala 100g", "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" },
+  { "category": "Grocery", "brand": "MDH", "name": "Kitchen King Masala 100g", "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" },
+  { "category": "Grocery", "brand": "Everest", "name": "Garam Masala 100g", "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" },
+  { "category": "Grocery", "brand": "Everest", "name": "Pav Bhaji Masala 100g", "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" }
+]
