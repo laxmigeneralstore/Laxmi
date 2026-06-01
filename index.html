@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Laxmi General Store — Wholesale &amp; Retail FMCG Distributor in Sundernagar, Himachal Pradesh. Browse our complete product catalogue." />
+  <title>Laxmi General Store — FMCG Catalogue</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-brand" id="nav-brand-btn" role="button" tabindex="0" aria-label="Go to home">
+        <div class="brand-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect width="28" height="28" rx="8" fill="url(#nlg)" />
+            <text x="14" y="19" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="serif">ल</text>
+            <defs>
+              <linearGradient id="nlg" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#f5a623"/><stop offset="1" stop-color="#e85d04"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Laxmi General Store</span>
+          <span class="brand-loc">Sundernagar, HP</span>
+        </div>
+      </div>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="#" class="nav-link active" data-view="home">Home</a>
+        <a href="#" class="nav-link" data-view="categories">Categories</a>
+      </nav>
+
+      <div class="nav-right">
+        <button class="nav-search-btn" id="nav-search-btn" aria-label="Open search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Global Search Bar -->
+    <div class="global-search-bar" id="global-search-bar" role="search">
+      <div class="gsc-inner">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="global-search-input" placeholder="Search products, brands, categories…" autocomplete="off" aria-label="Search" />
+        <button id="gsc-close" aria-label="Close search">✕</button>
+      </div>
+      <div class="search-results" id="search-results" role="listbox"></div>
+    </div>
+  </header>
+
+  <!-- ── MOBILE NAV DRAWER ──────────────────────────── -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <a href="#" class="mob-link" data-view="home">🏠 Home</a>
+    <a href="#" class="mob-link" data-view="categories">📦 Categories</a>
+  </div>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- ══ MAIN CONTENT ══════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ════════ HOME VIEW ════════ -->
+    <section id="view-home" class="view active">
+
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-bg">
+          <div class="hero-grain"></div>
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-badges">
+            <span class="badge badge-wholesale">Wholesale</span>
+            <span class="badge badge-retail">Retail</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="hero-title-line">Laxmi</span>
+            <span class="hero-title-line accent">General Store</span>
+          </h1>
+          <p class="hero-sub">Your trusted FMCG distributor in <strong>Sundernagar, Himachal Pradesh</strong>. Browse our complete catalogue of top brands.</p>
+          <div class="hero-search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="text" id="hero-search" placeholder="Search products, brands or categories…" autocomplete="off" />
+            <button id="hero-search-btn">Search</button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num" id="stat-products">—</span><span class="stat-label">Products</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num" id="stat-brands">—</span><span class="stat-label">Brands</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num" id="stat-cats">—</span><span class="stat-label">Categories</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories Grid -->
+      <section class="section section-cats-home">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Browse by</div>
+            <h2 class="section-title">Categories</h2>
+          </div>
+        </div>
+        <div class="categories-grid" id="home-categories-grid"></div>
+      </section>
+
+      <!-- About -->
+      <section class="section about-section">
+        <div class="about-card">
+          <div class="about-left">
+            <div class="about-icon">🏪</div>
+            <div class="section-eyebrow" style="margin-top:12px;">About Us</div>
+            <h2 class="section-title" style="margin-top:6px;">Trusted Since Decades</h2>
+            <p class="about-desc">Laxmi General Store is a leading wholesale and retail FMCG distributor based in Sundernagar, Himachal Pradesh. We supply top FMCG brands across biscuits, snacks, beverages, chocolates, personal care and grocery to retailers, hotels, and institutions across the region.</p>
+            <div class="about-features">
+              <div class="af-item"><span class="af-icon">✅</span> Authorised distributor of top brands</div>
+              <div class="af-item"><span class="af-icon">✅</span> Wholesale &amp; retail supply available</div>
+              <div class="af-item"><span class="af-icon">✅</span> Fast delivery across Sundernagar &amp; nearby areas</div>
+              <div class="af-item"><span class="af-icon">✅</span> Trusted by hundreds of retailers</div>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="contact-card">
+              <div class="cc-head">Get in Touch</div>
+              <div class="cc-body">
+                <div class="cc-item">
+                  <span class="cc-icon">📍</span>
+                  <div>
+                    <div class="cc-label">Location</div>
+                    <div class="cc-val">Sundernagar, Mandi<br>Himachal Pradesh — 175018</div>
+                  </div>
+                </div>
+                <div class="cc-item">
+                  <span class="cc-icon">🕐</span>
+                  <div>
+                    <div class="cc-label">Working Hours</div>
+                    <div class="cc-val">Mon–Sat: 9 AM – 8 PM</div>
+                  </div>
+                </div>
+                <div class="cc-item">
+                  <span class="cc-icon">📦</span>
+                  <div>
+                    <div class="cc-label">We Deal In</div>
+                    <div class="cc-val">Wholesale &amp; Retail</div>
+                  </div>
+                </div>
+              </div>
+              <a class="whatsapp-btn" href="https://wa.me/919999999999?text=Hello%20Laxmi%20General%20Store%2C%20I%20would%20like%20to%20enquire%20about%20your%20products." target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp Enquiry
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section><!-- /view-home -->
+
+    <!-- ════════ CATEGORIES VIEW ════════ -->
+    <section id="view-categories" class="view">
+      <div class="view-hero">
+        <div class="view-hero-inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <span class="bc-link" data-view="home">Home</span>
+            <span class="bc-sep">›</span>
+            <span class="bc-current">Categories</span>
+          </nav>
+          <h1 class="view-title">All Categories</h1>
+          <p class="view-sub">Browse our complete range of FMCG product categories</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="categories-grid categories-grid-full" id="all-categories-grid"></div>
+      </div>
+    </section>
+
+    <!-- ════════ SINGLE CATEGORY VIEW ════════ -->
+    <section id="view-category" class="view">
+      <div class="view-hero">
+        <div class="view-hero-inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <span class="bc-link" data-view="home">Home</span>
+            <span class="bc-sep">›</span>
+            <span class="bc-link" data-view="categories">Categories</span>
+            <span class="bc-sep">›</span>
+            <span class="bc-current" id="cat-breadcrumb">—</span>
+          </nav>
+          <button class="back-btn" id="cat-back-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Categories
+          </button>
+          <div class="cat-hero-emoji" id="cat-hero-emoji"></div>
+          <h1 class="view-title" id="cat-hero-title">—</h1>
+          <p class="view-sub" id="cat-hero-desc">—</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-head">
+          <h2 class="section-subtitle">Brands in this Category</h2>
+          <div class="search-row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="text" id="cat-brand-search" placeholder="Search brands…" autocomplete="off" />
+          </div>
+        </div>
+        <div class="brands-grid" id="cat-brands-grid"></div>
+      </div>
+    </section>
+
+    <!-- ════════ SINGLE BRAND VIEW ════════ -->
+    <section id="view-brand" class="view">
+      <div class="view-hero">
+        <div class="view-hero-inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <span class="bc-link" data-view="home">Home</span>
+            <span class="bc-sep">›</span>
+            <span class="bc-link" data-view="categories">Categories</span>
+            <span class="bc-sep">›</span>
+            <span class="bc-link" id="brand-cat-bc" data-action="back-to-cat">—</span>
+            <span class="bc-sep">›</span>
+            <span class="bc-current" id="brand-breadcrumb">—</span>
+          </nav>
+          <button class="back-btn" id="brand-back-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to <span id="brand-back-label">Category</span>
+          </button>
+          <div class="brand-hero-initial" id="brand-hero-initial"></div>
+          <h1 class="view-title" id="brand-hero-title">—</h1>
+          <p class="view-sub" id="brand-hero-cat-label">—</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-head">
+          <h2 class="section-subtitle" id="brand-products-heading">Products</h2>
+          <div class="search-row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="text" id="brand-prod-search" placeholder="Search products…" autocomplete="off" />
+          </div>
+        </div>
+        <div class="products-grid" id="brand-products-grid"></div>
+      </div>
+    </section>
+
+    <!-- ════════ PRODUCT DETAIL VIEW ════════ -->
+    <section id="view-product" class="view">
+      <div class="view-hero">
+        <div class="view-hero-inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <span class="bc-link" data-view="home">Home</span>
+            <span class="bc-sep">›</span>
+            <span class="bc-link" data-view="categories">Categories</span>
+            <span class="bc-sep">›</span>
+            <span class="bc-link" id="prod-cat-bc" data-action="back-to-cat-from-prod">—</span>
+            <span class="bc-sep">›</span>
+            <span class="bc-link" id="prod-brand-bc" data-action="back-to-brand">—</span>
+            <span class="bc-sep">›</span>
+            <span class="bc-current" id="prod-breadcrumb">—</span>
+          </nav>
+          <button class="back-btn" id="prod-back-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to <span id="prod-back-label">Products</span>
+          </button>
+        </div>
+      </div>
+      <div class="section">
+        <div class="product-detail-wrap" id="product-detail-card"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect width="28" height="28" rx="8" fill="url(#flg)" />
+            <text x="14" y="19" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="serif">ल</text>
+            <defs>
+              <linearGradient id="flg" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#f5a623"/><stop offset="1" stop-color="#e85d04"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div>
+          <div class="footer-name">Laxmi General Store</div>
+          <div class="footer-loc">Sundernagar, Himachal Pradesh</div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#" data-view="home">Home</a>
+        <a href="#" data-view="categories">Categories</a>
+      </div>
+      <div class="footer-copy">© 2025 Laxmi General Store. All rights reserved. | Wholesale &amp; Retail FMCG Distributor</div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" href="https://wa.me/919999999999?text=Hello%20Laxmi%20General%20Store%2C%20I%20would%20like%20to%20enquire%20about%20your%20products." target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Loading Overlay (shown while fetching Google Sheet) -->
+  <div id="loading-overlay" style="
+    position:fixed;inset:0;z-index:2000;
+    background:rgba(10,10,15,0.96);
+    display:flex;align-items:center;justify-content:center;
+    backdrop-filter:blur(8px);
+  ">
+    <div style="text-align:center">
+      <div style="
+        width:48px;height:48px;border-radius:50%;
+        border:3px solid rgba(245,166,35,0.2);
+        border-top-color:#f5a623;
+        animation:spin 0.8s linear infinite;
+        margin:0 auto 16px;
+      "></div>
+      <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:#f0f0f5;">
+        Loading catalogue…
+      </div>
+      <div style="font-size:0.78rem;color:#666680;margin-top:6px;">
+        Fetching from Google Sheets
+      </div>
+    </div>
+  </div>
+  <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+
+  <script src="script.js"></script>
+</body>
+</html>
