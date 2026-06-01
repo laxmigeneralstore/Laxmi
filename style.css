@@ -85,7 +85,20 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   transition: opacity var(--trans);
 }
 .nav-brand:hover { opacity: 0.82; }
-.brand-icon { flex-shrink: 0; }
+.brand-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.brand-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
 .brand-text { display: flex; flex-direction: column; }
 .brand-name { font-family: var(--font-h); font-weight: 700; font-size: 0.95rem; line-height: 1.2; }
 .brand-loc  { font-size: 0.68rem; color: var(--txt-3); margin-top: 1px; }
@@ -230,6 +243,49 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   padding: 40px 24px 36px;
 }
 .view-hero-inner { max-width: 1300px; margin: 0 auto; }
+
+/* ── CATEGORY BANNER IMAGE ──────────────────────────
+   Full-width image that sits directly above the
+   view-hero block when a category image is available.
+   Uses aspect-ratio so it's proportional on all screens.
+──────────────────────────────────────────────────── */
+.cat-banner {
+  width: 100%;
+  aspect-ratio: 21 / 7;       /* wide cinematic crop */
+  overflow: hidden;
+  background: var(--bg-3);
+  display: none;              /* hidden until JS sets display:'' */
+  position: relative;
+}
+.cat-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+/* When the banner is present, reduce top padding of the hero
+   so breadcrumb/back-btn don't feel too far from the image */
+.view-hero--has-banner {
+  padding-top: 24px;
+}
+
+/* Hide the emoji when a banner is shown (JS also does this,
+   but CSS acts as belt-and-suspenders) */
+.view-hero--has-banner .cat-hero-emoji {
+  display: none !important;
+}
+
+/* Responsive banner heights */
+@media (max-width: 768px) {
+  .cat-banner { aspect-ratio: 16 / 7; }
+}
+@media (max-width: 480px) {
+  .cat-banner { aspect-ratio: 4 / 2; }
+  .view-hero--has-banner { padding-top: 18px; }
+}
 
 /* Breadcrumb */
 .breadcrumb {
@@ -789,4 +845,102 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .products-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-stats { gap: 14px; }
   .stat-num { font-size: 1.5rem; }
+}
+
+/* ══════════════════════════════════════════════════
+   PRODUCTION AUDIT FIXES
+══════════════════════════════════════════════════ */
+
+/* Touch targets — min 44px for all interactive elements */
+.bc-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 2px;
+}
+.back-btn {
+  min-height: 44px;
+}
+.nav-search-btn,
+.hamburger {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Search bar must sit above loading overlay during normal use */
+.global-search-bar {
+  z-index: 1001;
+  position: relative;
+}
+
+/* Mobile nav z-index safety */
+.mobile-nav { z-index: 1002; }
+.mobile-overlay { z-index: 1001; }
+
+/* Brand hero: when a real logo image is loaded, use white bg like brand cards */
+.brand-hero-initial img {
+  background: #fff;
+  padding: 6px;
+}
+
+/* product-detail: single column on mobile with better spacing */
+@media (max-width: 640px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .pd-enquire {
+    width: 100%;
+    justify-content: center;
+  }
+  .about-card {
+    padding: 20px 16px;
+    gap: 22px;
+  }
+}
+
+/* Brands grid — show 3 columns on tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Prevent long product names from breaking layout */
+.pc-name {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.pd-name {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Floating WhatsApp button — higher z-index than navbar, clear of scrollbar */
+.wa-float {
+  z-index: 1100;
+}
+
+/* Hero search button — ensure tap target on all devices */
+#hero-search-btn {
+  min-height: 44px;
+  min-width: 80px;
+}
+
+/* Fix section-head gap on very small screens */
+@media (max-width: 380px) {
+  .categories-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .brands-grid     { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .products-grid   { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .section { padding: 28px 12px; }
+  .view-hero { padding: 24px 12px 20px; }
+  .hero-content { padding: 48px 16px 56px; }
+  .gsc-inner { padding: 10px 14px; }
+}
+
+/* Ensure mobile nav links are large enough to tap */
+.mob-link {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
 }
