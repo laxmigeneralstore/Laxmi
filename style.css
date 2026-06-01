@@ -477,6 +477,18 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .category-card:hover::before { opacity: 1; }
 .cat-emoji { font-size: 2.3rem; line-height: 1; transition: transform var(--trans); }
 .category-card:hover .cat-emoji { transform: scale(1.1); }
+
+/* Real category image (from Categories sheet) */
+.cat-img-wrap {
+  width: 100%; aspect-ratio: 16/9;
+  border-radius: var(--r-md); overflow: hidden;
+  background: var(--bg-3); margin-bottom: 2px;
+}
+.cat-img-wrap img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.45s ease;
+}
+.category-card:hover .cat-img-wrap img { transform: scale(1.06); }
 .cat-name { font-family: var(--font-h); font-weight: 700; font-size: 1rem; line-height: 1.2; }
 .cat-count { font-size: 0.73rem; color: var(--txt-3); }
 .cat-arrow {
@@ -519,6 +531,17 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   font-family: var(--font-h); font-weight: 800; font-size: 1.25rem;
   background: linear-gradient(135deg, var(--gold) 0%, var(--gold-2) 100%);
   color: #fff; flex-shrink: 0;
+}
+
+/* Real brand logo image (from Brands sheet) */
+.brand-logo-wrap {
+  width: 50px; height: 50px; border-radius: var(--r-md);
+  overflow: hidden; background: #fff;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brand-logo-wrap img {
+  width: 100%; height: 100%; object-fit: contain; padding: 4px;
 }
 .brand-card-name { font-family: var(--font-h); font-weight: 700; font-size: 0.98rem; line-height: 1.2; }
 .brand-card-count { font-size: 0.75rem; color: var(--gold); margin-top: auto; }
